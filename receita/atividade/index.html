@@ -190,6 +190,27 @@
     <img src="astronauta.jpg" alt=""> 
   </section>
 
+  <form action="/seu-destino-backend" method="POST">
+    <fieldset>
+      <legend>Entre em contato</legend>
+
+      <!-- campo de Nome -->
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+      <!-- campo de E-mail -->
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+
+      <!--campo de mensagem (Área de texto)-->
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rowa="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+
+      <!-- Botão de Envio -->
+       <button type="submit">Enviar Dados</button>
+    </fieldset>
+  </form>
+
   <section>
     <h2>Link externo</h2>
     <p>Visite o Site <a href="https://www.imdb.com" target="_blank">IMDb</a> para mais informações sobre filmes.</p>
