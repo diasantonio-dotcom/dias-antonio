@@ -1,66 +1,82 @@
-*  { 
+ /* Estilo geral da página */  
+ body { 
+    font-family: Arial, sans-serif;
+    background: linear-grandiet(to bottom, #8ec5fc, #e0c3fc);
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "poppins" , sans-serif;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-}
-
-.container {
-    background: rgba(255, 255, 0.15);
-    backdrop-filter: blur(12px);
-    padding: 40px;
-    border-radius: 20px;
-    text-align: center;
-    color: white;
-    max-width: 500px;
-    box-shadow: 0 8px rgba(0, 0, 0, 0.25);
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
-
-p {
-    font-size: 1.1rem;
-    margin-bottom: 25px;
-    opacity: 0.9;
-}
-
-button {
-    background: #ffffff;
-    color: #764ba2;
-    border: none;
-    padding: 14px 30px;
-    border-radius: 50px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-button:hover {
-    transform: translatey(-4px);
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
-}
-
-.card {
-    margin-top: 20px;
     padding: 20px;
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.1);
-    transition: 0.3s;
+    color: #222;
 }
 
-.card:hover {
-    transform: scale(1.05);
+/* Área principal do conteúdo */
+.container {
+    max-width: 900px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba( 0, 0, 0, 0.2);
+}
+
+/* Títulos*/
+h1 {
+    text-align: center;
+    color: #0d47a1;
+    font-size: 40px;  
+}
+
+h2 {
+    color: #1a237e;
+    border-bottom: 2px solid #3949ab;
+    padding-bottom: 5px;
+}
+
+/* Parágrafo */
+p {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 18px;;
+}
+
+/* Lista de filmes */
+ul {
+    font-size: 18px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Texto destacado */
+mark {
+    background-color: yellow;
+    padding: 2px;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th {
+    background-color: #3949ab;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+/* Responsabilidade */
+img {
+    max-width: 100%;
+    height: auto;
 }
