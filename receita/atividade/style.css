@@ -65,9 +65,8 @@ table, th, td {
 }
 
 th {
-    background-color: #3949ab;
-    color: white;
-    padding: 10px;
+   background-color: white;
+   color: black ;
 }
 
 td {
