@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+    background: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+}
+
+.pagina {
+    width: 100%;
+    max-width: 1050px;
+    margin: auto;
+    background: white;
+    padding: 2px;
+}
+
+/* =========================
+   TÍTULO
+========================= */
+
+header {
+    height: 40px;
+    background: #08083d;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 0;
+}
+
+header h1 {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* =========================
+   TABELA
+========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th,
+td {
+    border: 1px solid #333;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* =========================
+   CABEÇALHO DOS DIAS
+========================= */
+
+thead th {
+    background: #0b0b70;
+    color: white;
+    height: 32px;
+    font-size: 13px;
+}
+
+th.horario {
+    width: 75px;
+}
+
+/* =========================
+   CÉLULAS
+========================= */
+
+td {
+    height: 28px;
+    font-size: 10px;
+    line-height: 1.15;
+}
+
+/* =========================
+   HORÁRIOS
+========================= */
+
+.hora {
+    background: #15159a;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    width: 75px;
+}
+
+/* =========================
+   CORES DAS ATIVIDADES
+========================= */
+
+.verde {
+    background: #b9dba8;
+}
+
+.cinza {
+    background: #d9d9d9;
+}
+
+.laranja {
+    background: #eaa06d;
+}
+
+.vermelho {
+    background: #e63227;
+    color: white;
+}
+
+.roxo {
+    background: #bcbceb;
+}
+
+.amarelo {
+    background: #e6df83;
+}
+
+/* =========================
+   INTERVALOS
+========================= */
+
+.intervalo {
+    background: #f0f0f0;
+    color: #555;
+    font-size: 9px;
+}
+
+/* =========================
+   CÉLULAS NORMAIS
+========================= */
+
+.branco {
+    background: #eeeeee;
+}
+
+/* =========================
+   DORMIR
+========================= */
+
+.dormir {
+    background: #8585df;
+    color: white;
+    font-weight: bold;
+}
+
+/* =========================
+   LAZER
+========================= */
+
+.lazer {
+    background: #b9dba8;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* =========================
+   TEXTO EM NEGRITO
+========================= */
+
+td b {
+    font-weight: bold;
+}
+
+/* =========================
+   CELULAR / TELA PEQUENA
+========================= */
+
+@media screen and (max-width: 800px) {
+
+    body {
+        padding: 2px;
+    }
+
+    .pagina {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 950px;
+    }
+}
